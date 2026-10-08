@@ -1,0 +1,23 @@
+<swiper class="container" index="0" indicator="true" loop="false">
+    <div class="card">
+        <text class="hr-value" style="color: {{ zoneColor }};">{{ heartRate }}</text>
+        <text class="unit">BPM</text>
+        <text class="zone-label" style="color: {{ zoneColor }};">{{ zoneLabel }}</text>
+        <text class="time">{{ elapsedText }}</text>
+        <input class="action-btn" type="button" value="{{ running ? 'Stop' : 'Start' }}" @click="toggleWorkout"></input>
+        <input class="back-btn" type="button" value="Back" @click="goBack"></input>
+    </div>
+
+    <div class="card">
+        <text class="steps-value">{{ steps }}</text>
+        <text class="unit">steps</text>
+        <text class="distance">{{ distance }} m</text>
+        <text class="time">{{ elapsedText }}</text>
+        <input class="action-btn" type="button" value="{{ running ? 'Stop' : 'Start' }}" @click="toggleWorkout"></input>
+        <input class="back-btn" type="button" value="Back" @click="goBack"></input>
+    </div>
+
+    <div class="zone-alert" if="{{ showZoneAlert }}" style="background-color: {{ zoneColor }};">
+        <text class="alert-text">{{ alertText }}</text>
+    </div>
+</swiper>

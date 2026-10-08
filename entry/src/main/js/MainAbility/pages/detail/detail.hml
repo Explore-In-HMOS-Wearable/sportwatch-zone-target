@@ -1,0 +1,9 @@
+<div class="container">
+    <text class="date">{{ date }}</text>
+    <text class="duration">{{ durationText }}</text>
+    <text class="stat">Avg {{ averageHR }} · Max {{ maxHR }}</text>
+    <text class="stat">{{ steps }} steps · {{ distance }} m</text>
+    <input class="send-btn" type="button" value="Send to Phone" @click="sendToPhone"></input>
+    <text class="send-status">{{ sendStatus }}</text>
+    <input class="back-btn" type="button" value="Back" @click="goBack"></input>
+</div>

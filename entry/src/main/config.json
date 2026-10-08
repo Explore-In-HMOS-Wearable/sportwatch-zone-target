@@ -1,0 +1,78 @@
+{
+  "app": {
+    "bundleName": "com.hmosdemos.lite_wearable.zone_target",
+    "vendor": "hmosdemos",
+    "version": {
+      "code": 1000000,
+      "name": "1.0.0"
+    }
+  },
+  "deviceConfig": {},
+  "module": {
+    "deviceType": [
+      "liteWearable"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "entry",
+      "moduleType": "entry"
+    },
+    "abilities": [
+      {
+        "name": ".MainAbility",
+        "srcLanguage": "js",
+        "srcPath": "MainAbility",
+        "icon": "$media:icon",
+        "description": "$string:MainAbility_desc",
+        "label": "$string:MainAbility_label",
+        "type": "page"
+      }
+    ],
+    "reqPermissions": [
+      {
+        "name": "ohos.permission.READ_HEALTH_DATA",
+        "reason": "Access heart rate",
+        "usedScene": {
+          "ability": [
+            "MainAbility"
+          ],
+          "when": "always"
+        }
+      },
+      {
+        "name": "ohos.permission.ACTIVITY_MOTION",
+        "reason": "step counter",
+        "usedScene": {
+          "ability": [
+            "MainAbility"
+          ],
+          "when": "always"
+        }
+      },
+      {
+        "name": "ohos.permission.VIBRATE",
+        "reason": "feedback",
+        "usedScene": {
+          "ability": [
+            "MainAbility"
+          ],
+          "when": "always"
+        }
+      }
+    ],
+    "js": [
+      {
+        "pages": [
+          "pages/index/index",
+          "pages/workout/workout",
+          "pages/history/history",
+          "pages/settings/settings",
+          "pages/setting-age/setting-age",
+          "pages/setting-height/setting-height",
+          "pages/detail/detail"
+        ],
+        "name": ".MainAbility"
+      }
+    ]
+  }
+}

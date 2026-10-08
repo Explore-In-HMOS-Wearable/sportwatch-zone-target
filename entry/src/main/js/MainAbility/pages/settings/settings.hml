@@ -1,0 +1,20 @@
+<div class="container">
+    <text class="page-title">Settings</text>
+
+    <div class="menu-item" @click="goAge">
+        <text class="menu-label">Age</text>
+        <text class="menu-value">{{ age }}</text>
+    </div>
+
+    <div class="menu-item" @click="goHeight">
+        <text class="menu-label">Height</text>
+        <text class="menu-value">{{ heightCm }} cm</text>
+    </div>
+
+    <div class="menu-item" @click="toggleVibration">
+        <text class="menu-label">Vibration</text>
+        <text class="menu-value">{{ vibration ? 'ON' : 'OFF' }}</text>
+    </div>
+
+    <input class="back-btn" type="button" value="Back" @click="goBack"></input>
+</div>

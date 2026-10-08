@@ -1,0 +1,59 @@
+.container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #14161b;
+}
+
+.date {
+    font-size: 16px;
+    color: #aaaaaa;
+    margin-bottom: 6px;
+}
+
+.duration {
+    font-size: 44px;
+    color: #f5c518;
+    margin-bottom: 12px;
+}
+
+.stat-row {
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 6px;
+}
+
+.stat {
+    font-size: 16px;
+    color: #ffffffff;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.send-btn {
+    width: 70%;
+    height: 46px;
+    border-radius: 23px;
+    background-color: #5cb85c;
+    color: #14161b;
+    font-size: 18px;
+    margin-top: 16px;
+}
+
+.send-status {
+    font-size: 14px;
+    color: #aaaaaa;
+    margin-top: 6px;
+}
+
+.back-btn {
+    width: 60%;
+    height: 42px;
+    border-radius: 21px;
+    background-color: #262f38;
+    color: #f5c518;
+    font-size: 16px;
+    margin-top: 8px;
+}

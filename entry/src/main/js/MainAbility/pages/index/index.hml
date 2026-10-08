@@ -1,0 +1,6 @@
+<div class="container">
+    <text class="title">ZoneTarget</text>
+    <input class="menu-item" type="button" value="Workout" @click="goWorkout"></input>
+    <input class="menu-item" type="button" value="History" @click="goHistory"></input>
+    <input class="menu-item" type="button" value="Settings" @click="goSettings"></input>
+</div>

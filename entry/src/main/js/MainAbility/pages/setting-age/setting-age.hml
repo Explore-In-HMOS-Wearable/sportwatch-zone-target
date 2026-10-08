@@ -1,0 +1,10 @@
+<div class="container">
+    <slider ref="ageProxy" class="crown-proxy" min="10" max="100" value="{{ age }}" onchange="handleCrown"></slider>
+    <text class="label">Age</text>
+    <text class="big-value">{{ age }}</text>
+    <div class="btn-row">
+        <input class="small-btn" type="button" value="-" @click="ageDown"></input>
+        <input class="small-btn" type="button" value="+" @click="ageUp"></input>
+    </div>
+    <input class="back-btn" type="button" value="Back" @click="goBack"></input>
+</div>

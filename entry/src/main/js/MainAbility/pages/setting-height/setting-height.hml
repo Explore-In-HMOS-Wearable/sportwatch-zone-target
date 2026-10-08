@@ -1,0 +1,6 @@
+<div class="container">
+    <text class="label">Height</text>
+    <picker-view ref="pickerViewObj" class="height-picker" type="text" columns="1" range="{{ heightList }}"
+                 selected="{{ heightIndex }}" @change="onHeightChange"></picker-view>
+    <input class="back-btn" type="button" value="Back" @click="goBack"></input>
+</div>

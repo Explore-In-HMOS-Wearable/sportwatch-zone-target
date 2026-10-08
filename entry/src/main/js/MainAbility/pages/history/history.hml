@@ -1,0 +1,9 @@
+<div class="container">
+    <text class="page-title">History</text>
+    <text class="empty-text" if="{{ ! hasRecords }}">No workouts yet</text>
+    <div class="record-card" for="{{ records }}" @click="openDetail($item.idx)">
+        <text class="line1">{{ $item.line1 }}</text>
+        <text class="line2">{{ $item.line2 }}</text>
+    </div>
+    <input class="back-btn" type="button" value="Back" @click="goBack"></input>
+</div>

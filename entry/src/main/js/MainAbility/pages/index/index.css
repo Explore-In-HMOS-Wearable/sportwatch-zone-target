@@ -1,0 +1,24 @@
+.container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #14161b;
+}
+
+.title {
+    font-size: 45px;
+    color: #f5c518;
+    margin-bottom: 14px;
+}
+
+.menu-item {
+    width: 80%;
+    height: 54px;
+    margin-top: 8px;
+    border-radius: 27px;
+    background-color: #2b2f38;
+    color: #ffffff;
+    font-size: 22px;
+}
